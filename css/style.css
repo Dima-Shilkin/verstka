@@ -1,0 +1,575 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #3A3845;
+  font-family: "Inter", system-ui;
+  font-size: 16px;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover, button:hover {
+  color: gold;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Контейнер */
+.container {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 clamp(0rem, -4.5375rem + 16.5vw, 10.3125rem);
+}
+
+/* Шапка */
+.header {
+  border-bottom: 1px solid #CAC9CF;
+  padding: 0 clamp(1.25rem, -2.7375rem + 14.5vw, 10.3125rem);;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.header__menu-list {
+  gap: clamp(0.625rem, -6.3925rem + 14.6199vw, 3.75rem);
+}
+
+.header__menu-icons {
+  gap: clamp(0.625rem, -1.3399rem + 4.0936vw, 1.5rem);
+  width: 152px;
+}
+
+.menu__link {
+  color: #3A3845;
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img__icons {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.menu__btn {
+  display: none;
+}
+
+/* Main About Moon */
+.container__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+}
+
+.title {
+  margin: 0;
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title__about {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+}
+
+.description {
+  margin: 0;
+  color: #595667;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.description__about {
+  width: clamp(19.3125rem, 15.82rem + 12.7vw, 27.25rem);
+}
+
+/* Main Content */
+.title__card {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 114%;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.description__card {
+  max-width: 435px;
+}
+
+.card__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #F7F6F5;
+  
+}
+
+.container__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: stretch; /* возможно оставить */
+}
+
+.img__content {
+  object-fit: cover;
+}
+
+/* Секция HOW WE WORKS */
+.container__works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: stretch;
+  margin-top: clamp(3rem, 2.12rem + 3.2vw, 5rem);
+} 
+
+.how__works {
+  padding: 0 clamp(1.25rem, -0.4rem + 6vw, 5rem);
+  padding-top: 48px;
+}
+
+.title__card-left {
+  margin-top: clamp(2.25rem, 1.92rem + 1.2vw, 3rem);
+  text-align: left;
+}
+
+.title__card-subtitle {
+  margin: 20px 0 12px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+}
+
+.description-left {
+  text-align: left;
+}
+
+/* OUR TEAM */
+.section__team {
+  margin: clamp(2.5rem, 1.4rem + 4vw, 5rem) 0 ;
+  text-align: center;
+}
+
+.title__about_team {
+  margin-bottom: 48px;
+}
+
+.title__team {
+  margin: 10px 0 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.subtitle__team {
+  margin: 0;
+  color: #807F86;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.team__list-img {
+  width: 100%;
+}
+
+/* SIGN EMAIL */
+.container__sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.subtitle__sign {
+  margin: 0;
+  margin-bottom: 24px;
+  color: #595667;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137%;
+}
+
+.title__sign {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "EB Garamond", serif;
+  font-weight: 700;
+  font-size: clamp(1.75rem, 1.4754rem + 1.1268vw, 2.25rem);
+  line-height: 89%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.input {
+  width: clamp(21.875rem, 20.8025rem + 3.9vw, 24.3125rem);
+  height: 39px;
+  border: 0;
+  border-bottom: 1px solid #3A3845;
+  padding: 0;
+  text-align: center;
+}
+
+.input::placeholder {
+  color: #595667;
+}
+
+.button {
+  display: block;
+  padding: 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button__sign {
+  width: 103px;
+  height: 39px;
+  border: 1px solid #3a3845;
+  color: #3A3845;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Футер */
+.footer {
+  width: 100%;
+  margin-top: clamp(2.5rem, 1.4rem + 4vw, 5rem);
+  color: #E5E5E5;
+  background-color: #3A3845;
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding-top: clamp(2rem, 1.4507rem + 2.2535vw, 3rem);;
+}
+
+.left__footer {
+  padding: 0 clamp(1.25rem, -0.4rem + 6vw, 5rem);
+}
+
+.logo__white {
+  margin-bottom: 24px;
+}
+
+.subtitle__footer {
+  max-width: 304px;
+  color: #E5E5E5;
+}
+
+.button__footer {
+  width: 142px;
+  height: 41px;
+  margin-top: 32px;
+  margin-bottom: 30px;
+  border: 1px solid #E5E5E5;
+  color: #E5E5E5;
+}
+
+.right__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 63px;
+  padding: 0 clamp(1.25rem, -0.4rem + 6vw, 5rem);
+}
+
+.title__colum {
+  margin: 0 0 20px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 137%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footer__right-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right__column {
+  min-width: 92px;
+}
+
+.copyright {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.copyright__subt {
+  margin: 0;
+  padding: 0 5px;
+  color: #A6A6A8;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 137%;
+  text-align: center;
+}
+
+.copyright__subt-color {
+  color: #807F86;
+}
+
+
+
+
+
+@media (max-width: 1300px) {
+  .container__works {
+    grid-template-columns: auto;
+  }
+
+  .left__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container__footer {
+    justify-content:flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* About moon настройка грид сетки */
+  .container__content {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  }
+
+  .card_1 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    }
+
+  .card_2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    }
+
+  .card_3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    }
+
+  .card_4 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    }
+
+  .card_5 {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    }
+
+  .card_6 {
+    grid-row-start: 6;
+    grid-row-end: 5;
+    }
+
+  /* Список сотрудников настройка скролла */
+  .team__list {
+    gap: 20px;
+    padding: 0 20px;
+    overflow-x: scroll;
+  }
+
+  .card__team {
+    width: 255px;
+    height: 377px;
+  }  
+
+  /* Настройка sign тайтла чтобы переносился текс 
+    как в макете*/
+  .title__sign {
+    max-width: 350px;
+  }
+
+  /* Футер */
+  .right__footer {
+    row-gap: 32px;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+
+  /* Бургер меню */
+  .disp__block {
+    display: none;
+  }
+
+  .header__menu-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F6F5;
+    transition: .3s ease;
+    transform: translateY(-100%);
+  }
+
+  .header__menu-open .header__menu-list {
+    transform: translateY(0);
+  }
+
+  .menu__link {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .header__menu {
+    order: 1;
+  }
+  .header__icons {
+    order: 3;
+  }
+
+  .logo__black {
+    z-index: 2; 
+    order: 2;
+  }
+
+  .img__cart {
+    z-index: 2;
+  }
+
+  .disp__open {
+    z-index: 2;
+  }
+
+  .menu__btn {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .btn-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #595667;
+    transition: .3s ease;
+  }
+
+  .btn-line:nth-child(1) {
+    top: 0;
+  }
+
+  .btn-line:nth-child(2) {
+    top: 8px;
+  }
+  .btn-line:nth-child(3) {
+    top: 8px;
+  }
+
+  .btn-line:nth-child(4) {
+    top: 16px;
+  }
+
+  .header__menu-icons {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__menu-open .btn-line:nth-child(1) {
+    transform: scaleX(0);
+  }
+
+  .header__menu-open .btn-line:nth-child(2){
+    transform: rotate(45deg);
+  }
+
+  .header__menu-open .btn-line:nth-child(3){
+    transform: rotate(-45deg);
+  }
+
+  .header__menu-open .btn-line:nth-child(4){
+    transform: scaleX(0);
+  }
+}
+
+@media (max-width: 350px) {
+  .input {
+    width: 320px;
+  }
+}
